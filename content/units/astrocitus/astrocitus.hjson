@@ -1,0 +1,73 @@
+name: Astrocitus
+description: The core unit of Core: Clasentis, can fire bullets and heal but is rather weak.
+flying: true
+drag: 0.4
+accel: 0.2
+engineSize: 2
+speed: 4.7
+health: 40
+armor: -0.5
+useUnitCap: false
+mineWalls: true
+mineSpeed: 4
+mineTier: 1
+buildSpeed: 0.7
+vulnerableWithPayloads: true
+coreUnitDock: true
+targetable: false
+hittable: false
+payloadCapacity: 256
+rotateSpeed: 10
+createWreck: false
+groundLayer: 74
+itemCapacity: 45
+range: 40
+abilities: {
+  add: [
+    {
+      type: ShieldRegenFieldAbility
+      reload: 120
+      amount: 10
+      max: 30
+      range: 80
+    }
+    {
+      type: MoveEffectAbility
+      display: false
+      minVelocity: 0
+      x: 0
+      y: -6
+      teamColor: true
+      effectParam: 1.3
+    }
+  ]
+}
+  weapons: [
+    {
+      top: false
+      x: 3.25
+      y: 4.5
+      name: astrocitus-front-gun
+      recoil: 0.4
+      shootCone: 45
+        reload: 10
+        rotate: false
+        mirror: true
+        alternate: true
+   bullet: {
+      type: ContinuousFlameBulletType
+      length: 30
+      width: 1
+      colors: [d46f6b, e48581, ffbe7f, e49e81, ffffff]
+      drawFlare: true
+      damageInterval: 15
+      damage: 3
+      healPercent: 1
+      buildingDamageMultiplier: 0.01
+      pierceArmor: false
+      pierceCap: 1
+      hitEffect: none
+      despawnEffect: none
+    }
+    }
+]
