@@ -1,0 +1,22 @@
+type: CoreBlock
+name: "Core: Singular"
+description: Core of the base. Once destroyed the sector is lost.
+details: "Starting core of Silentis, very cheap. Make a better core when you have the chance"
+size: 3
+unitType: astrocitus
+health: 900
+itemCapacity: 1500
+unitCapModifier: 8
+squareSprite: false
+isFirstTier: true
+requirements: [
+  md3-cobalt/750
+  md3-cinnabar-item/750
+]
+category: effect
+research: {
+  root: true
+  name: Silentis
+  planet: serpulo
+}
+alwaysUnlocked: true
