@@ -1,0 +1,61 @@
+parent: serpulo
+sectorSize: 1
+radius: 0.5
+generator: AsteroidGenerator
+accessible: true
+alwaysUnlocked: true
+bloom: false
+startSector: 27
+iconColor: 292A55
+hasAtmosphere: true
+atmosphereColor: 80748425
+atmosphereRadIn: 0.007
+atmosphereRadOut: 0.06
+rotateTime: 1034
+orbitRadius: 6
+landCloudColor: 80748430
+
+defaultEnv: 129
+updateLighting: false
+allowLaunchToNumbered: false
+allowLaunchSchematics: false
+allowLaunchLoadout: false
+allowWaveSimulation: false
+allowSectorInvasion: false
+clearSectorOnLose: true
+enemyBuildSpeedMultiplier: 0.6
+
+defaultCore: core-singular
+
+mesh: [
+  { # NIEBIESKITE, SULFURIC ROCK
+    type: NoiseMesh
+    seed: 5647267
+    # Mesh "quality". More divisions = more hexagons.
+    divisions: 3
+    color1: 999999
+    color2: 7d7380
+    radius: 0.4487
+    octaves: 3
+    persistence: 1
+    scale: 12
+    mag: 1
+    colorScale: 1.59
+    colorThreshold: 0.6
+  },
+  { # LITHIMENT, SHALLOW CINNABAR
+    type: NoiseMesh
+    seed: 5647267
+    # Mesh "quality". More divisions = more hexagons.
+    divisions: 2
+    color1: ff6d5b
+    color2: b35144
+    radius: 0.3775
+    octaves: 3
+    persistence: 4
+    scale: 1
+    mag: 3
+    colorScale: 1.59
+    colorThreshold: 0.6
+  },
+]
