@@ -1,0 +1,24 @@
+type: MassDriver
+name: Launching Cannon
+description: "a" //todo, actually make a description
+health: 25
+size: 1
+itemCapacity: 25
+squareSprite: false
+reload: 50
+range: 50
+minDistribute: 5
+shake: 0
+bulletSpeed: 4
+bulletLifetime: 12
+knockback: 2
+category: distribution
+research: {
+  parent: core-singular
+  planet: sn-silentis
+}
+requirements: [
+  amalgamated-clay/5
+  amalgamated-brick/5
+]
+alwaysUnlocked: true

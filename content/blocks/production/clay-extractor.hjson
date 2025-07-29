@@ -1,15 +1,14 @@
-type: WallCrafter
+type: BeamDrill
 name: Clay Extractor
 description: Digs and clumps Amalgamated Clay together.
 size: 2
 requirements: [
   amalgamated-clay/20
 ]
-drillTime: 90
-output: amalgamated-clay
+drillTime: 180
 ambientSound: drill
 ambientSoundVolume: 0.1
-squareSprite: false
+squareSprite: true
 category: production
 researchCostMultiplier: 0.5
 research: {
