@@ -1,0 +1,46 @@
+type: AttributeCrafter
+name: Amalgamated Furnace
+description: A smeltery for cooking Amalgamated Clay into Amalgamated Bricks
+health: 70
+craftTime: 60
+size: 3
+itemCapacity: 10
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawDefault
+    }
+    {
+      type: DrawRegion
+      suffix: -bottom
+    }
+  {
+    type: DrawGlowRegion
+    suffix: -glow
+  }
+    {
+      type: DrawRegion
+      suffix: -top
+    }
+  ]
+}
+consumes: {
+  items: {
+    items: [
+      amalgamated-clay/2
+    ]
+  }
+}
+requirements: [
+  amalgamated-clay/12
+]
+outputItem: amalgamated-brick/1
+category: crafting
+research: {
+  parent: clay-extractor
+  planet: sn-silentis
+}
+researchCost: [
+  amalgamated-clay/100
+]
