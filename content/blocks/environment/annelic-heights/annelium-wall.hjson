@@ -1,3 +1,4 @@
 type: StaticWall
 name: Annelium Wall
 variants: 2
+itemDrop: amalgamated-clay
