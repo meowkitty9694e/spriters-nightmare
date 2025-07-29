@@ -1,0 +1,6 @@
+name: Amalgamated Brick
+description: "A hardened form of Amalgamated Clay, used for walls and other resources"
+cost: 0.5
+alwaysUnlocked: true
+color: 8f8d87
+research: amalgamated-clay
