@@ -2,7 +2,7 @@ name: Astrocitus
 description: The core unit of Core: Clasentis, can fire bullets and heal but is rather weak.
 flying: true
 drag: 0.4
-accel: 0.2
+accel: 1
 engineSize: 2
 speed: 4.7
 health: 40
@@ -56,12 +56,13 @@ abilities: {
         alternate: true
    bullet: {
       type: ContinuousFlameBulletType
-      length: 30
+      length: 72
       width: 1
       colors: [d46f6b, e48581, ffbe7f, e49e81, ffffff]
       drawFlare: true
       damageInterval: 15
       damage: 3
+      lifetime: 14
       healPercent: 1
       buildingDamageMultiplier: 0.01
       pierceArmor: false
