@@ -1,0 +1,45 @@
+type: ThermalGenerator
+name: Amalgamated Generator
+description: Produces power when put on a vent.
+health: 70
+size: 3
+itemCapacity: 10
+attribute: heat
+category: power
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawDefault
+    }
+    {
+      type: DrawRegion
+      suffix: -bottom
+    }
+  {
+    type: DrawGlowRegion
+    suffix: -heat
+  }
+    {
+      type: DrawBlurSpin
+      suffix: -rotator
+      blurThresh: 0.4
+      rotateSpeed: 120
+    }
+    {
+      type: DrawRegion
+      suffix: -spinner-top
+    }
+  ]
+}
+requirements: [
+  amalgamated-clay/12
+]
+powerProduction: 0.4
+research: {
+  parent: clay-extractor
+  planet: sn-silentis
+}
+researchCost: [
+  amalgamated-clay/100
+]
