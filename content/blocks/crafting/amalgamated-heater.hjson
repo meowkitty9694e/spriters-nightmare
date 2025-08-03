@@ -1,0 +1,36 @@
+type: HeatProducer
+name: Pain
+description: A smeltery for cooking Amalgamated Clay into Amalgamated Bricks
+health: 70
+size: 2
+itemCapacity: 10
+regionRotated1: 1
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawDefault
+    }
+    {
+      type: DrawRegion
+      suffix: -top1
+    }
+  {
+    type: DrawGlowRegion
+    suffix: -heat
+  }
+  ]
+}
+consumePower: 12
+heatOutput: 3
+requirements: [
+  amalgamated-clay/12
+]
+category: crafting
+research: {
+  parent: clay-extractor
+  planet: sn-silentis
+}
+researchCost: [
+  amalgamated-clay/100
+]
