@@ -2,7 +2,7 @@ type: SteamVent
 name: Annelic Vent
 variants: 2
 attributes: {
-   heat: 1
+   steam: 1
 }
 blendGroup: annelium
 parent: annelium

@@ -1,0 +1,29 @@
+type: heatConductor
+name: Heat Distributor
+size: 1
+underBullets: true
+visualMaxHeat: 24
+drawer: [
+  {
+    type: DrawDefault
+  }
+  {
+    type: DrawHeatInput
+    heatColor: 90a2fc
+  }
+  {
+    type: DrawHeatOutput
+    heatColor: 90a2fc
+  }
+]
+regionRotated1: 1
+splitHeat: true
+requirements: [
+  amalgamated-clay/4
+]
+research: {
+  parent: core-singular
+  planet: sn-silentis
+}
+solid: false
+researchCostMultiplier: 0.5

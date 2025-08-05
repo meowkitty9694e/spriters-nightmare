@@ -1,10 +1,10 @@
 type: HeatProducer
-name: Pain
+name: Amalgamated Heater
 description: A smeltery for cooking Amalgamated Clay into Amalgamated Bricks
 health: 70
 size: 2
-itemCapacity: 10
-regionRotated1: 1
+rotate: true
+visualMaxHeat: 5
 drawer: {
   type: DrawMulti
   drawers: [
@@ -12,8 +12,8 @@ drawer: {
       type: DrawDefault
     }
     {
-      type: DrawRegion
-      suffix: -top1
+      type: DrawHeatOutput
+      heatColor: 641616A6
     }
   {
     type: DrawGlowRegion
@@ -21,7 +21,9 @@ drawer: {
   }
   ]
 }
-consumePower: 12
+consumes: {
+  power: 1
+}
 heatOutput: 3
 requirements: [
   amalgamated-clay/12

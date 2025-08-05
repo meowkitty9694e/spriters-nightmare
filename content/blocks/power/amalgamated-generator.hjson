@@ -1,34 +1,24 @@
 type: ThermalGenerator
-name: Amalgamated Generator
-description: Produces power when put on a vent.
-health: 70
 size: 3
-itemCapacity: 10
-attribute: heat
+health: 450
+fogRadius: 2
+attribute: steam
+displayEfficiencyScale: 0.11111111111
+displayEfficiency: false
+minEfficiency: 8
+powerProduction: 0.2222222223
 category: power
+buildCostMultiplier: 2
 drawer: {
   type: DrawMulti
   drawers: [
     {
-      type: DrawDefault
-    }
-    {
-      type: DrawRegion
-      suffix: -bottom
-    }
-  {
-    type: DrawGlowRegion
-    suffix: -heat
-  }
-    {
       type: DrawBlurSpin
       suffix: -rotator
-      blurThresh: 0.4
-      rotateSpeed: 120
+      rotateSpeed: 5
     }
     {
-      type: DrawRegion
-      suffix: -spinner-top
+      type: DrawDefault
     }
   ]
 }
