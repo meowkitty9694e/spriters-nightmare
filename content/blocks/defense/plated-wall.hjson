@@ -1,0 +1,56 @@
+type: PowerTurret
+name: Plated Wall
+description: A wall made from Amalgamated Bricks and Amalgamated Clay.
+health: 734
+size: 1
+drawers: [
+{
+  type: DrawTurret
+  basePrefix: plated-wall
+}
+{
+    type: DrawGlowRegion
+    suffix: -heat
+}
+]
+requirements: [
+  amalgamated-brick/6
+  amalgamated-clay/2
+]
+heatRequirement: 2
+researchCostMultiplier: 0.5
+reload: 200
+rotateSpeed: 0
+smokeEffect: none
+shootX: 0
+shootY: 0
+shootCone: 360
+shootSound: none
+range: 20
+recoil: 0
+shootType: {
+  instantDisappear: true
+  damage: 2
+  splashDamage: 1
+  splashDamageRadius: 32
+  despawnEffect: none
+  status: burning
+  hitEffect: none
+  shootEffect: {
+    type: WaveEffect
+    sizeFrom: 0
+    sizeTo: 16
+    strokeFrom: 2
+    strokeTo: 0
+  }
+}
+consumes: { }
+category: defense
+research: {
+  parent: core-singular
+  planet: sn-silentis
+}
+researchCost: [
+  amalgamated-brick/12
+  amalgamated-clay/15
+]

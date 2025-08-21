@@ -1,0 +1,74 @@
+type: ItemTurret
+name: Melfinit
+description: Fires powerful naval missiles that cannot stay on land for long. Deals massive critical damage to enemies near max health.
+health: 550
+size: 2
+reload: 45
+range: 160
+inaccuracy: 8
+rotateSpeed: 5
+shoot: {
+  type: ShootPattern
+  shots: 2
+  shotDelay: 6
+}
+targetAir: true
+targetGround: true
+shootSound: bullet
+maxAmmo: 20
+velocityRnd: 0.12
+unitSort: weakest
+requirements: [
+  amalgamated-brick/18
+  amalgamated-clay/6
+]
+ammoTypes: {
+  amalgamated-brick: {
+    frontColor: eeb379
+    backColor: 7b5f44
+    trailColor: ab8259
+    width: 7
+    height: 9
+    speed: 3.5
+    lifetime: 40
+    damage: 10
+    splashDamage: 12
+    splashDamageRadius: 8
+  }
+}
+drawer: {
+  type: DrawTurret
+  parts: [
+    {
+      type: RegionPart
+      suffix: -gun
+      progress: recoil
+      moveY: -1.75
+    }
+    {
+      type: RegionPart
+      suffix: -cover-l
+      progress: warmup
+      moveY: -2
+      moveX: -2
+      moveRot: 30
+    }
+    {
+      type: RegionPart
+      suffix: -cover-r
+      progress: warmup
+      moveY: -2
+      moveX: 2
+      moveRot: -30
+    }
+  ]
+}
+category: turret
+research: {
+  parent: core-singular
+  planet: sn-silentis
+}
+researchCost: [
+  amalgamated-brick/58
+  amalgamated-clay/35
+]

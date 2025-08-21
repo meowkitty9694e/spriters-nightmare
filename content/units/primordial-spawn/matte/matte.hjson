@@ -1,0 +1,141 @@
+type: flying
+lowAltitude: true
+name: Matte
+description: Primordial Spawn, shoots a slurry of linitium infused water at enemies.
+drawCell: false
+immunities: [burning, melting]
+outlineColor: 232028
+drag: 0.08
+accel: 0.09
+health: 840
+armor: 2
+speed: 3
+hitSize: 13
+flying: true
+faceTarget: false
+circleTarget: true
+abilities: [
+  {
+    type: LiquidExplodeAbility
+    liquid: water
+    amount: 240
+  }
+]
+      despawnEffect: {
+        type: MultiEffect
+        effects: [
+          {
+            type: WaveEffect
+            colorFrom: 61568a
+            colorTo: 9587cc
+            lightColor: 9587cc
+            sizeFrom: 0
+            sizeTo: 60
+            lifetime: 30
+          }
+          {
+            type: ExplosionEffect
+            waveColor: 9587cc
+            smokeColor: 61568a
+            sparkColor: 9587cc
+            sparks: 0
+            sparkLen: 0
+            sparkStroke: 0
+            smokes: 8
+          }
+        ]
+      }
+abilities: [
+  {
+    type: MoveEffectAbility
+    minVelocity: 0
+    interval: 2
+    x: -3
+    y: 0
+    rotateEffect: true
+    rotation: 0
+    parentizeEffects: false // this doesn't work with MultiEffect unfortunately, nothing can be done about it
+    effect: {
+      type: MultiEffect
+      effects: [
+        {
+          type: ParticleEffect
+          layer: 91
+          followParent: true
+          rotWithParent: true
+          region: matte-wing-l
+          particles: 1
+          length: 0
+          spin: 15
+          lifetime: 2
+          sizeFrom: 20
+          sizeTo: 20
+          baseRotation: 210
+          lightOpacity: 0
+        }
+        {
+          type: ParticleEffect
+          layer: 91
+          followParent: true
+          rotWithParent: true
+          region: matte-wing-l
+          particles: 1
+          length: 0
+          spin: -15
+          lifetime: 2
+          sizeFrom: 20
+          sizeTo: 20
+          baseRotation: 240
+          startDelay: 1
+          lightOpacity: 0
+        }
+      ]
+    }
+  }
+  {
+    type: MoveEffectAbility
+    minVelocity: 0
+    interval: 2
+    x: 3
+    y: 0
+    rotateEffect: true
+    rotation: 0
+    parentizeEffects: true
+    effect: {
+      type: MultiEffect
+      effects: [
+        {
+          type: ParticleEffect
+          layer: 91
+          followParent: true
+          rotWithParent: true
+          region: matte-wing-r
+          particles: 1
+          length: 0
+          spin: -15
+          lifetime: 2
+          sizeFrom: 20
+          sizeTo: 20
+          baseRotation: -30
+          lightOpacity: 0
+        }
+        {
+          type: ParticleEffect
+          layer: 91
+          followParent: true
+          rotWithParent: true
+          region: matte-wing-r
+          particles: 1
+          length: 0
+          spin: 15
+          lifetime: 2
+          sizeFrom: 20
+          sizeTo: 20
+          baseRotation: -60
+          startDelay: 1
+          lightOpacity: 0
+        }
+      ]
+    }
+  }
+]

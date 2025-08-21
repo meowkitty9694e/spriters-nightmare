@@ -1,10 +1,11 @@
 type: HeatProducer
 name: Amalgamated Heater
-description: A smeltery for cooking Amalgamated Clay into Amalgamated Bricks
+description: Heater
 health: 70
 size: 2
 rotate: true
 visualMaxHeat: 5
+regionRotated1: 1
 drawer: {
   type: DrawMulti
   drawers: [

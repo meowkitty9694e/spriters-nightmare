@@ -1,0 +1,80 @@
+name: Ent
+type: legs
+description: Fires low piercing bolts at enemies, relatively weak
+flying: false
+speed: 0.4
+health: 200
+hitSize: 4
+targetAir: false
+
+// legs
+legCount: 5
+legLength: 12
+legBaseOffset: 4
+legMaxLength: 2
+legMinLength: .2
+legLengthScl: 1
+legForwardScl: 1
+legGroupSize: 2
+rippleScale: 0.4
+legMoveSpace: 1
+allowLegStep: true
+hovering: true
+legPhysicsLayer: false
+
+shadowElevation: 0.15
+groundLayer: 74
+
+weapons: [{
+  name: pounder-weapon
+  top: true
+  rotate: true
+  y: 0
+  x: 0
+  inaccuracy: 0
+  reload: 95
+  shootSound: artillery
+  mirror: false
+  rotateSpeed: 5
+  bullet: {	
+    #type: ExplosionBuletType # 7rodo.jpeg
+    type: PointBulletType
+    damage: 55
+    lifetime: 95
+    collidesAir: false
+    smokeEffect: flakExplosion 
+    trailEffect: {
+       line: true
+       cone: 3
+    particles: 2
+    lifetime: 5
+    length: 5
+    interp: pow3Out
+    sizeInterp: linear
+    lenFrom: 5
+    lenTo: 2
+    strokeFrom: 2
+    strokeTo: 0
+  }
+    shootEffect: {
+       line: true
+       cone: 20
+    particles: 17
+    lifetime: 4
+    length: 3
+    interp: pow3Out
+    sizeInterp: linear
+    lenFrom: 5
+    lenTo: 2
+    strokeFrom: 2
+    strokeTo: 0
+  }
+    trailChance: 1
+  }
+}]
+research: {
+  parent: shotgunner-mech
+  objectives: [
+    additive-reconstructor
+  ]
+}

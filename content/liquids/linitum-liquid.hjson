@@ -1,0 +1,7 @@
+name: Linitum
+description: "A strange combination of both a gasous material and a liquid, volitile."
+cost: 0.5
+explosiveness: 0.5
+alwaysUnlocked: true
+color: 8f8d87
+research: core-singular

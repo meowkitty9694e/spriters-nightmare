@@ -1,0 +1,10 @@
+type: Floor
+name: Linitum
+variants: 3
+speedMultiplier: 0.5
+drownTime: 660
+isLiquid: true
+cacheLayer: water
+albedo: 0.8
+liquidDrop: linitum-liquid
+supportsOverlay: true
